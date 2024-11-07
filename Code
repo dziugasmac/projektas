@@ -7,8 +7,9 @@ if a>=1.50:
    
 elif 1<a<1.50:
     print('Saldainiai 0.50')
-    print('Traškučiai 1.00')
     print('Kramtomoji guma 0.75')
+    print('Traškučiai 1.00')
+    
 elif 0.75<a<1:
     print('Saldainiai 0.50')
     print('Kramtomoji guma 0.75')
@@ -16,25 +17,27 @@ elif 0.5<=a<0.75:
     print('Saldainiai 0.50')
 elif a<0.5:
     print('Jūsų įvesta suma nepakanka jokiems daiktams įsigyti')
-b=int(input('Pasirinkite prekią'))
-if b == 1 and a>=0.5:
-    print('Pasirinkote saldainius')
-    c=float(a-0.5)
-    c=round(c,2)
-    print('Dėkojame už jūsų pirkinį. Jūsų likutis yra', c)
-elif b == 2 and a>=0.75:
-    print('Pasirinkote kramtomą gumą')
-    c=float(a-0.75)
-    c=round(c,2)
-    print('Dėkojame už jūsų pirkinį. Jūsų likutis yra', c)
-elif b == 3 and a>=1:
-    print('Pasirinkote Traškučius')
-    c=float(a-1)
-    c=round(c,2)
-    print('Dėkojame už jūsų pirkinį. Jūsų likutis yra', c)
-elif b == 4 and a>=1.5:
-    print('Pasirinkote Gėrimą')
-    c=float(a-1.5)
-    c=round(c,2)
-    print('Dėkojame už jūsų pirkinį. Jūsų likutis yra', c)
- 
+if a>=0.5:
+    b=int(input('Pasirinkite prekią'))
+    if b == 1 and a>=0.5:
+        print('Pasirinkote saldainius')
+        c=float(a-0.5)
+        c=round(c,2)
+        print('Dėkojame už jūsų pirkinį. Jūsų likutis yra', c)
+    elif b == 2 and a>=0.75:
+        print('Pasirinkote kramtomą gumą')
+        c=float(a-0.75)
+        c=round(c,2)
+        print('Dėkojame už jūsų pirkinį. Jūsų likutis yra', c)
+    elif b == 3 and a>=1:
+        print('Pasirinkote Traškučius')
+        c=float(a-1)
+        c=round(c,2)
+        print('Dėkojame už jūsų pirkinį. Jūsų likutis yra', c)
+    elif b == 4 and a>=1.5:
+        print('Pasirinkote Gėrimą')
+        c=float(a-1.5)
+        c=round(c,2)
+        print('Dėkojame už jūsų pirkinį. Jūsų likutis yra', c)
+else:
+    print('Dėkojame, kad apsilankėte. Linkime jums geros dienos')

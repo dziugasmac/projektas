@@ -4,17 +4,15 @@ if a>=1.50:
     print('2. Kramtomoji guma 0.75')
     print('3. Traškučiai 1.00')
     print('4. Gėrimas 1.50')
-   
-elif 1<a<1.50:
-    print('Saldainiai 0.50')
-    print('Kramtomoji guma 0.75')
-    print('Traškučiai 1.00')
-    
-elif 0.75<a<1:
-    print('Saldainiai 0.50')
-    print('Kramtomoji guma 0.75')
+elif 1<=a<1.50:
+    print('1. Saldainiai 0.50')
+    print('2. Kramtomoji guma 0.75')
+    print('3. Traškučiai 1.00')
+elif 0.75<=a<1:
+    print('1. Saldainiai 0.50')
+    print('2. Kramtomoji guma 0.75')
 elif 0.5<=a<0.75:
-    print('Saldainiai 0.50')
+    print('1. Saldainiai 0.50')
 elif a<0.5:
     print('Jūsų įvesta suma nepakanka jokiems daiktams įsigyti')
 if a>=0.5:
@@ -41,3 +39,4 @@ if a>=0.5:
         print('Dėkojame už jūsų pirkinį. Jūsų likutis yra', c)
 else:
     print('Dėkojame, kad apsilankėte. Linkime jums geros dienos')
+ 
